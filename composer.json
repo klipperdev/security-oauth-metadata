@@ -1,0 +1,30 @@
+{
+    "name": "klipper/security-oauth-metadata",
+    "type": "library",
+    "description": "Security Oauth Metadata component of Klipper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Pluchino",
+            "email": "francois.pluchino@klipper.dev"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4.0",
+        "klipper/metadata": "^2.0.0",
+        "klipper/security-oauth": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": { "Klipper\\Component\\SecurityOauthMetadata\\": "" },
+        "exclude-from-classmap": [
+            "**/Tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
